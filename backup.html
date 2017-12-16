@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300">
+
+<style>
+
+body{
+background-color: #F8F8F8;
+font-family: 'Nunito', Extra-Light;
+
+}
+
+.wrapper{
+position:absolute;
+margin-top: -320px;
+left:220px;
+width:10%;
+display: grid;
+grid-template-columns: 0fr 0fr 0fr 0fr;
+grid-template-rows: 0fr 0fr 0fr 0fr;
+/*grid-column-gap:1em;
+grid-row-gap:1em;*/
+grid-gap:2em 15em ;
+
+
+}
+
+.wrapper > div{
+background: #ffffff;
+border:#ffffff;
+text-align:center;
+align-self:flex-start;
+/*display: inline-block;*/
+font-family: 'Nunito', Extra-Light;
+width: 350%;
+}
+
+.wrapper, div, div{
+  color:#b3b3b3;
+
+}
+
+
+.wrapper p{
+font-weight:bold;
+color: #b3b3b3;
+}
+
+.box6{
+  align-self:auto;
+  grid-row:2/1;
+}
+
+.box2{
+  align-self:center;
+  grid-column: 2/2;
+  grid-row:1/2;
+}
+
+.box4{
+  align-self:center;
+  grid-column: 4/4;
+  grid-row:1/1;
+}
+
+.box3{
+  align-self:center;
+  grid-column: 3/3;
+  grid-row:1/1;
+
+}
+
+
+.box5{
+grid-column: 1/1;
+grid-row:2/2;
+margin-top: -15px;
+
+}
+
+.box6{
+grid-column: 2/2;
+grid-row:2/2;
+margin-top: -80px;
+}
+
+.box7{
+  margin-top: -40px;
+}
+
+.box8{
+  margin-top: -220px;
+}
+.box9{
+  margin-top: -42px;
+}
+.box10{
+  margin-top: -12px;
+}
+.box11{
+  margin-top: -190px;
+}
+
+.box12{
+  margin-top: -200px;
+}
+/*.box3{
+  align-self:center;
+  grid-column: 3/3;
+  grid-row:1/2;
+}*/
+
+/*.box2{
+  align-self:auto;
+  grid-column: 1.1;
+  *grid-row: 1/1;
+  align-self: end;*/
+/**
+.box3{
+  justify-self:end;
+  grid-column: 2/4;
+  grid-row:3;
+}
+
+.box4{
+grid-column:1;
+grid-row:2/4;
+}*/
+
+.headertop{
+
+  background-color: #26262e;
+  height:200px;
+  width:100%;
+
+}
+.sidebar{
+  position: relative;
+  background-color: #cccccc;
+  left:86.8%;
+  right: 0;
+  height:100%;
+  width:250px;
+}
+.headsidebar{
+  position: absolute;
+  background-color: #00000c;
+  left:86.6%;
+  right: 5;
+  margin-top: 0;
+
+  height:200px;
+  width:250px;
+}
+
+.ul_top_menu_vertical{
+  position: relative;
+  left: 150px;
+  top:150px;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.li_top_menu_vertical{
+
+display: inline-block;
+text-align: center;
+padding: 14px 25px;
+text-decoration: none;
+
+font-family: 'Open Sans', sans-serif;
+}
+
+.li_top_menu_vertical a{
+color: #d9d9d9;
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  color: #737373;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.li_top_menu_vertical a:hover{
+border-bottom: 1px solid #70DBDB;
+}
+
+.sidebar a:hover{
+border-left: 1px solid #70DBDB;
+}
+
+#profilepic{
+  width: 3%;
+  height: auto;
+  border-radius: 25px;
+
+  position: relative;
+  left: 74%;
+  top: 10px;
+}
+
+.profiledrop{
+  width: 6%;
+  border-color: #26262e;
+  background-color: #26262e;
+  color: white;
+  position: relative;
+  left:75%;
+  top: -25px;
+
+font-family: 'Open Sans', sans-serif;
+}
+
+
+#clipboard{
+position: absolute;
+top: 55px;
+left: 50px;
+color: white;
+font-family: 'Open Sans', sans-serif;
+}
+
+#collections{
+position: relative;
+color: #ffffff;
+height:40px;
+width: 40px;
+top: 150px;
+right: -80px;
+font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+color:#595959;
+
+}
+
+
+.sidebar a{
+  position:relative;
+  left: 90px;
+  top: 30px;
+  /*text-align: left;*/
+align-content: center;
+height: 100%;
+}
+
+
+.changeview1{
+  position: relative;
+  top:8px;
+  right: 1250px;
+  height: 2%;
+  width: 2%;
+}
+
+.changeview2{
+  position: relative;
+  top:8px;
+  right:1250px;
+
+  height: 2%;
+  width: 2%;
+}
+.searchfield{
+margin-top: 20px;
+}
+
+.last{
+position:fixed;
+left:70px;
+top:210px;
+width: 76%;
+height:60px;
+/*border:solid;*/
+text-align: right;
+}
+
+.sidebar a{
+  #595959
+
+  color:#595959;
+
+}
+
+h1{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+
+</style>
+
+
+</head>
+<body>
+  <div class="headsidebar">
+    <h1 id="collections">Collections</h1>
+  </div>
+
+  <div class="headertop">
+    <!--horizontal menu-->
+    <h1 id="clipboard">Clipboard</h1>
+
+    <ul class="ul_top_menu_vertical">
+      <li class="li_top_menu_vertical"><a href="default.asp">Photos</a></li>
+      <li class="li_top_menu_vertical"><a href="news.asp">Videos</a></li>
+      <li class="li_top_menu_vertical"><a href="contact.asp">Audio</a></li>
+      <li class="li_top_menu_vertical"><a href="about.asp">Notes</a></li>
+      <li class="li_top_menu_vertical"><a href="about.asp">Links</a></li>
+    </ul>
+
+    <img id="profilepic" src="petter.png" alt="profile_pic">
+
+    <!--dropdown for image-->
+    <select class="profiledrop">
+      <option value="profile">Profile</option>
+      <option value="shopping_cart">Shopping Cart</option>
+      <option value="help">Help</option>
+    </select>
+
+
+
+
+    <!-- </div> -->
+
+  </div>
+
+
+  <div class="sidebar">
+    <a id="hover1" href="#home">Architecture</a><br><br><br>
+    <a id="hover2" href="#news">Design</a><br><br><br>
+    <a id="hover3" href="#contact">Products</a><br><br><br>
+    <a id="hover4" href="#contact">Minimal</a><br><br><br>
+    <a id="hover5" href="#contact">Autos</a><br><br><br>
+    <a id="hover6" href="#contact">Technology</a><br><br><br>
+    <a id="hover7" href="#contact">Photography</a><br><br><br>
+  </div>
+
+<div class="last">
+  <form class="searchfield" action="https://clipboards.com/index.php?route=product/search&search="  method="get"><input type="text" name="clipsearch">&#x1F50D;
+    <!-- <div class="searchbar"> -->
+      <img class="changeview1" src="square.view.png" alt="squareview">
+      <img class="changeview2" src="list.view.png" alt="listview">
+  </form>
+
+</div>
+
+
+  <div class="wrapper">
+    <div class="box1">
+      <img width="100%" src="images/pic1.png" alt="pic1">
+        <p class="header">Minimal Industrial lounge</p>Sed posuere consectetur est at lobortis. Etiam porta sem malesuada
+        <hr class="hr">source.com &#9734; 463
+    </div><!--
+
+    --><div class="box2"><img width="100%" src="images/pic2.png" alt="pic1">via.com &#9734; 153
+    </div>
+    <div class="box3"><img width="100%" src="images/pic3.png" alt="pic1">
+      <p class="header">Open front home</p>
+      <hr class="hr">
+      domain.com &#9734; 573
+    </div>
+    <div class="box4"><img width="100%"  src="images/pic4.png" alt="pic1">
+       Praesent commodo cursus magna, vel scelerisque nisl  csectetur et. Vivamus sagittis lacus vel augue
+      <hr class="hr">original.com &#9734; 293
+    </div>
+    <div class="box5">
+      <img width="100%"src="images/pic5.png" alt="pic1">
+       via.com &#9734;246
+    </div>
+    <div class="box6"><img width="100%"src="images/pic6.png" alt="pic1">
+        <p class="header">Concrete and glass</p>
+          Sed posuere consectetur est at lobortis.Etiam porta sem malesuada
+        <hr class="hr">source.com &#9734; 156
+    </div>
+    <div class="box7"><img width="100%"src="images/pic7.png" alt="pic1">
+       Praesent commodo cursus magna, vel scelerisque nisl csectetur et. Vivamus sagitis lacus vel augue
+      <hr class="hr"> original.com &#9734; 7
+    </div>
+    <div class="box8"><img width="100%"src="images/pic8.png" alt="pic1">
+        <p class="header">Grey minima bedroom</p>
+      domain.com &#9734; 887
+    </div>
+    <div class="box9"><img width="100%"src="images/pic9.png" alt="pic1">
+       Black door
+      <hr class="hr">domain.com &#9734; 888
+    </div>
+    <div class="box10"><img width="100%"src="images/pic10.png" alt="pic1">
+       Praesent commodo cursus magna, vel scelerisque nisl csectetur et. Vivamus sagitis lacus vel augue
+      <hr class="hr">original.com &#9734; 7
+    </div>
+    <div class="box11"><img width="100%"src="images/pic11.png" alt="pic1">
+       White table & chairs
+        <hr class="hr">original.com &#9734; 989
+    </div>
+    <div class="box12"><img width="100%"src="images/pic12.png" alt="pic1">
+       Dope House
+      <hr class="hr"> original.com &#9734; 1000
+    </div>
+
+  </div>
+
+</body>
+</html>
