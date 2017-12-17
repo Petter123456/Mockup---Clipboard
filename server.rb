@@ -1,7 +1,7 @@
 require 'sinatra' #requires sinatra
 
 get '/' do
-  file.read('version1.html')
+  File.open('public/version1.html')
 end
 
 
