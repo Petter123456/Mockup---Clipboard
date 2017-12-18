@@ -193,7 +193,9 @@ border-bottom: 1px solid #70DBDB;
 }
 /*sidebar hoover*/
 .sidebar a:hover{
-border-left: 1px solid #70DBDB;
+margin-left: -60px;
+border-left:5px solid #70DBDB;
+padding: 20px;
 }
 /*profile pic*/
 #profilepic{
